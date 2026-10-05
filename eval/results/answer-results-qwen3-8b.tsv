@@ -1,0 +1,72 @@
+label	query	lang	kind	status	correct	cited	expected	seconds	reason	answer
+qwen3:8b	q001	en	code	ANSWERED	1	RT-6204-2RS|KW-6204-2RS	KW-6204-2RS|RT-6204-2RS	7.3		The product code for the 6204-2RS bearing is RT-6204-2RS and KW-6204-2RS.
+qwen3:8b	q002	de	code	ANSWERED	1	KW-6205-2RS|RT-6205-2RS	KW-6205-2RS|RT-6205-2RS	5.2		Für das Lager 6205 2RS bieten wir folgende Produkte an:
+qwen3:8b	q003	fr	code	ANSWERED	1	KW-6204-ZZ|RT-6204-ZZ	KW-6204-ZZ|RT-6204-ZZ	3.7		Nous avons deux roulements à billes 6204-ZZ disponibles.
+qwen3:8b	q004	it	code	ANSWERED	1	RT-6302|RT-6302-2RS|KW-6302|KW-6302-2RS|RT-6302-ZZ|KW-6302-ZZ	KW-6302|KW-6302-ZZ|KW-6302-2RS|RT-6302|RT-6302-ZZ|RT-6302-2RS	7.6		I prodotti disponibili per il modello 6302 sono RT-6302, RT-6302-2RS, KW-6302, KW-6302-2RS, RT-6302-ZZ e KW-6302-ZZ.
+qwen3:8b	q005	en	code	ANSWERED	1	FX-912-M8x30-A2	FX-912-M8x30-A2	3.0		The product you are looking for is available.
+qwen3:8b	q006	de	code	ANSWERED	1	FX-912-M10x40-A4	FX-912-M10x40-A4	5.3		Die Fixtec Zylinderschraube mit Innensechskant DIN 912 M10 x 40, Edelstahl A4, 50 Stück ist die passende Produktvariante.
+qwen3:8b	q007	de	code	ANSWERED	1	FX-934-M12-8.8	FX-934-M12-8.8	3.7		Für DIN 934 M12 verzinkt empfehlen wir folgende Produkte:
+qwen3:8b	q008	en	code	ANSWERED	0		BL-SPZ-1250	2.9		There is no product in the list that matches the SPZ 1250 specification.
+qwen3:8b	q009	it	code	ANSWERED	1	BL-XPZ-1000	BL-XPZ-1000	4.8		La cinghia trapezoidale stretta dentata XPZ 1000, 9,7 mm è adatta per pulegge piccole e ha una migliore dissipazione del calore.
+qwen3:8b	q010	fr	code	ANSWERED	1	SM-OR-30x3-NBR	SM-OR-30x3-NBR	4.2		Le joint torique Sealmax 30 x 3 mm NBR 70 est disponible en sachet de 25.
+qwen3:8b	q011	de	code	ANSWERED	1	PF-EL-8-G14|PF-ST-8-G14|PF-EL-10-G14|PF-EL-8-G38|PF-ST-8-G38	PF-ST-8-G14|PF-EL-8-G14	6.0		Für eine G1/4 8 mm Steckverschraubung empfehlen wir die folgenden Produkte:
+qwen3:8b	q012	en	code	ANSWERED	1	GX-M20-MS	GX-M20-MS	4.0		For an M20 cable gland in brass, we recommend the Glandex cable gland M20 x 1.5, nickel-plated brass, for cable 6–12 mm.
+qwen3:8b	q013	de	synonym	ANSWERED	1	FX-912-M6x20-A2|FX-912-M6x20-A4	FX-912-M6x20-A2|FX-912-M6x20-A4	5.0		Für eine Inbusschraube M6 x 20 aus Edelstahl empfehlen wir folgende Produkte:
+qwen3:8b	q014	fr	synonym	ANSWERED	1	FX-912-M8x40-A4	FX-912-M8x40-A4	4.2		Nous proposons la vis CHC M8 x 40 inox A4.
+qwen3:8b	q015	it	synonym	ANSWERED	1	FX-912-M5x16-8.8|FX-912-M5x16-A2|FX-912-M5x16-A4	FX-912-M5x16-8.8|FX-912-M5x16-A2|FX-912-M5x16-A4	7.0		Le viti a testa cilindrica con esagono incassato DIN 912 M5 x 16 sono disponibili in acciaio 8.8 zincato e in acciaio inox A2 e A4.
+qwen3:8b	q016	en	synonym	ANSWERED	1	FX-912-M12x50-8.8	FX-912-M12x50-8.8	4.7		The Fixtec socket head cap screw DIN 912 M12 x 50, steel 8.8, zinc-plated, pack of 25 is the product you are looking for.
+qwen3:8b	q017	de	synonym	ANSWERED	1	FX-912-M4x10-A2|FX-912-M4x10-A4	FX-912-M4x10-A2|FX-912-M4x10-A4	4.9		Wir haben Zylinderschrauben M4 x 10 aus Edelstahl A2 und A4, die rostfrei sind.
+qwen3:8b	q018	it	synonym	ANSWERED	1	FX-912-M10x30-8.8	FX-912-M10x30-8.8	5.1		Le viti a testa cilindrica con esagono incassato M10 x 30 in acciaio zincato sono disponibili in diverse varianti.
+qwen3:8b	q019	de	synonym	ANSWERED	1	KW-6204-2RS|KW-6304-2RS|KW-6004-2RS	KW-6004-2RS|KW-6204-2RS|KW-6304-2RS|RT-6004-2RS|RT-6204-2RS|RT-6304-2RS	5.3		Für ein Kugellager mit 20 mm Welle und beidseitiger Abdichtung sind folgende Produkte geeignet:
+qwen3:8b	q020	en	synonym	ANSWERED	1	RT-6205-2RS|KW-6205-2RS|RT-6005-2RS|KW-6005-2RS	KW-6005-2RS|KW-6205-2RS|RT-6005-2RS|RT-6205-2RS	4.5		We have sealed bearings with a 25 mm bore.
+qwen3:8b	q021	fr	synonym	ANSWERED	1	RT-6203-2RS|KW-6203-2RS	KW-6203-2RS|RT-6203-2RS	4.8		Nous proposons deux roulements étanches 17x40 : RT-6203-2RS et KW-6203-2RS.
+qwen3:8b	q022	it	synonym	ANSWERED	1	KW-6203-ZZ|RT-6203-ZZ	KW-6203-ZZ|RT-6203-ZZ	4.9		Il cuscinetto schermato 6203 è disponibile in due versioni: KW-6203-ZZ e RT-6203-ZZ.
+qwen3:8b	q023	de	synonym	ANSWERED	1	PF-EL-6-G18|PF-EL-6-G14	PF-EL-6-G18|PF-EL-6-G14	4.1		Für Druckluft Winkelstecker 6 mm empfehlen wir die folgenden Produkte:
+qwen3:8b	q024	fr	synonym	ANSWERED	1	PF-EL-10-G38	PF-EL-10-G38	4.6		Le raccord instantané coudé Pneumaflow pour tube 10 mm et filetage mâle G3/8 convient à votre demande.
+qwen3:8b	q025	it	synonym	ANSWERED	1	PF-T-12	PF-T-12	3.5		Il raccordo a T per aria compressa con tubo 12 mm è disponibile.
+qwen3:8b	q026	en	synonym	ANSWERED	1	PF-T-4	PF-T-4	3.3		For a 4 mm air hose tee, we recommend the Pneumaflow push-in T-connector, 4 mm tube.
+qwen3:8b	q027	de	synonym	ANSWERED	1	BL-SPA-1800	BL-SPA-1800	3.8		Der Belton Schmalkeilriemen SPA 1800, 12,7 mm, ist der passende Keilriemen für Ihre Anforderungen.
+qwen3:8b	q028	fr	synonym	ANSWERED	1	BL-XPZ-1500	BL-XPZ-1500	3.7		La courroie crantée XPZ 1500 est disponible.
+qwen3:8b	q029	de	synonym	ANSWERED	1	FX-934-M8-A4	FX-934-M8-A4	4.7		Für eine Mutter M8 rostfrei und säurebeständig empfehlen wir die Fixtec Sechskantmutter DIN 934 M8, Edelstahl A4, 100 Stück.
+qwen3:8b	q030	en	synonym	ANSWERED	1	FX-912-M6x25-A4|FX-912-M6x25-A2|FX-912-M6x25-8.8	FX-912-M6x25-A4	4.7		For screw M6 x 25 for seawater, we recommend the following products.
+qwen3:8b	q031	de	constraint	FALLBACK	0		VQ-MS-2.5-4|EM-MS-2.5-4	4.7	answer cited products outside the results: [VQ-MS-2.5-4]	
+qwen3:8b	q032	en	constraint	ANSWERED	1	EM-MS-6-10	VQ-MS-6-10|EM-MS-6-10	3.5		The Elmatic motor protection circuit breaker 6–10 A is suitable for a 7 A motor.
+qwen3:8b	q033	fr	constraint	ANSWERED	0		VQ-MS-9-14|EM-MS-9-14	2.8		Aucun produit ne correspond à votre demande.
+qwen3:8b	q034	it	constraint	ANSWERED	1	EM-MS-20-25|VQ-MS-20-25	VQ-MS-17-23|VQ-MS-20-25|EM-MS-17-23|EM-MS-20-25	4.7		Il salvamotore adatto per un motore da 20 A è l'interruttore salvamotore 20–25 A.
+qwen3:8b	q035	de	constraint	ANSWERED	1	VQ-C25-230AC|EM-C25-230AC	VQ-C25-230AC|VQ-C32-230AC|VQ-C38-230AC|EM-C25-230AC|EM-C32-230AC|EM-C38-230AC	4.3		Für einen 11 kW Motor mit Spule 230 V empfehlen wir folgende Produkte:
+qwen3:8b	q036	en	constraint	ANSWERED	1	VQ-C18-24DC|EM-C18-24DC	VQ-C18-24DC|VQ-C25-24DC|VQ-C32-24DC|VQ-C38-24DC|EM-C18-24DC|EM-C25-24DC|EM-C32-24DC|EM-C38-24DC	3.7		We have contactors with a 24 V DC coil and at least 7.5 kW rating.
+qwen3:8b	q037	it	constraint	ANSWERED	0		VQ-C9-24DC|EM-C9-24DC	3.2		Nessun prodotto disponibile per le specifiche richieste.
+qwen3:8b	q038	de	constraint	ANSWERED	1	SM-OR-20x2.5-FKM	SM-OR-20x2.5-FKM	4.7		Der O-Ring SM-OR-20x2.5-FKM ist für Temperaturen bis +200 °C geeignet und beständig gegen Öle und Chemikalien.
+qwen3:8b	q039	en	constraint	ANSWERED	1	SM-OR-30x3-EPDM	SM-OR-30x3-EPDM	4.0		For hot water and steam, we recommend the Sealmax O-ring 30 x 3 mm EPDM 70, pack of 25.
+qwen3:8b	q040	fr	constraint	ANSWERED	1	SM-OR-10x2-NBR	SM-OR-10x2-NBR|SM-OR-10x2-FKM	5.0		Pour un joint torique huile moteur 10 x 2, nous vous recommandons le Sealmax joint torique 10 x 2 mm NBR 70, sachet de 25.
+qwen3:8b	q041	it	constraint	ANSWERED	1	GX-M25-PA|GX-M25-MS	GX-M20-PA|GX-M20-MS|GX-M25-PA|GX-M25-MS	4.4		Il pressacavo adatto per un cavo da 10 mm con protezione IP68 è GX-M25-PA o GX-M25-MS.
+qwen3:8b	q042	de	constraint	ANSWERED	1	GX-M25-MS|GX-M32-MS	GX-M25-MS|GX-M32-MS	4.8		Für ein 15 mm Kabel empfehlen wir die Glandex Kabelverschraubung M25 x 1,5 oder M32 x 1,5.
+qwen3:8b	q043	en	constraint	ANSWERED	1	GX-M16-PA|GX-M12-PA	GX-M12-PA|GX-M12-MS|GX-M16-PA|GX-M16-MS	4.0		For a 5 mm cable, we recommend the Glandex cable gland M16 x 1.5 or M12 x 1.5.
+qwen3:8b	q044	fr	constraint	ANSWERED	1	VQ-C32-230AC|EM-C32-230AC	VQ-C32-230AC|EM-C32-230AC	4.1		Nous proposons deux contacteurs tripolaires 15 kW avec une bobine 230 V CA.
+qwen3:8b	q045	de	need	ANSWERED	0		LB-H1-400|LB-H1-1000	3.1		Lebensmittelechtes Fett für Bäckereimaschine finden Sie in unserem Sortiment.
+qwen3:8b	q046	en	need	ANSWERED	1	LB-EM-400	LB-EM-400	3.3		For electric motor bearings, we recommend Lubrion electric motor bearing grease, 400 g cartridge.
+qwen3:8b	q047	fr	need	ANSWERED	1	LB-HT-400	LB-HT-400	4.8		La graisse haute température LB-HT-400 convient pour des températures allant jusqu'à 200 °C, ce qui inclut 180 °C.
+qwen3:8b	q048	it	need	ANSWERED	1	LB-EP2-400	LB-EP2-400	4.5		Il lubrion grasso multiuso EP2, cartuccia 400 g, è adatto per cuscinetti a strisciamento e volventi, da -30 a +120 °C.
+qwen3:8b	q049	de	need	ANSWERED	1	SM-OR-15x2.5-NBR	SM-OR-15x2.5-NBR|SM-OR-15x2.5-FKM	4.7		Für Hydrauliköl eignet sich der Sealmax O-Ring 15 x 2,5 mm NBR 70, 25 Stück.
+qwen3:8b	q050	en	need	ANSWERED	1	PF-U-8	PF-U-8	3.2		Use the Pneumaflow push-in straight union, 8 mm tube to join two 8 mm air tubes.
+qwen3:8b	q051	en	cross	ANSWERED	1	FX-912-M4x16-A2	FX-912-M4x16-A2	4.2		The Fixtec socket head cap screw DIN 912 M4 x 16, stainless A2, pack of 100 is the product you're looking for.
+qwen3:8b	q052	de	cross	ANSWERED	1	FX-912-M5x20-8.8	FX-912-M5x20-8.8	4.4		Die Zylinderschraube Innensechskant M5 x 20 verzinkt ist in unserem Sortiment verfügbar.
+qwen3:8b	q053	fr	cross	ANSWERED	1	FX-912-M6x30-A4|FX-912-M6x25-A4|FX-912-M10x30-A4|FX-912-M8x30-A4|FX-912-M12x30-A4	FX-912-M6x30-A4	6.8		Nous proposons plusieurs vis à tête cylindrique six pans creux M6 x 30 en inox A4.
+qwen3:8b	q054	it	cross	ANSWERED	1	FX-912-M8x25-A2	FX-912-M8x25-A2	4.5		Le viti testa cilindrica esagono incassato M8 x 25 A2 sono disponibili in diverse varianti.
+qwen3:8b	q055	en	cross	ANSWERED	1	FX-912-M8x35-8.8	FX-912-M8x35-8.8	3.7		The Fixtec socket head cap screw M8 x 35 zinc plated is available.
+qwen3:8b	q056	de	cross	ANSWERED	1	FX-912-M10x50-A4	FX-912-M10x50-A4	4.5		Die Zylinderschraube Innensechskant M10 x 50 A4 ist in unserem Sortiment verfügbar.
+qwen3:8b	q057	fr	cross	ANSWERED	1	FX-912-M12x40-A2	FX-912-M12x40-A2	4.4		Nous proposons plusieurs vis à tête cylindrique six pans creux M12 x 40 en inox A2.
+qwen3:8b	q058	it	cross	ANSWERED	1	FX-912-M6x40-8.8	FX-912-M6x40-8.8	5.0		Le viti testa cilindrica esagono incassato M6 x 40 zincate sono disponibili con codice FX-912-M6x40-8.8.
+qwen3:8b	q059	de	cross	ANSWERED	1	SM-OR-8x2-FKM	SM-OR-8x2-FKM	3.8		Der O-Ring 8 x 2 mm FKM ist in unserem Sortiment verfügbar.
+qwen3:8b	q060	fr	cross	ANSWERED	1	SM-OR-12x2-EPDM	SM-OR-12x2-EPDM	4.1		Nous proposons le joint torique 12 x 2 mm EPDM 70, sachet de 25.
+qwen3:8b	q061	it	cross	ANSWERED	1	SM-OR-25x3-NBR	SM-OR-25x3-NBR	3.7		L'anello OR 25 x 3 NBR è disponibile in magazzino.
+qwen3:8b	q062	en	cross	ANSWERED	1	SM-OR-40x3.5-FKM	SM-OR-40x3.5-FKM	3.8		We have the O-ring 40 x 3.5 mm FKM 80, pack of 25.
+qwen3:8b	q063	de	cross	ANSWERED	1	SM-OR-50x3.5-EPDM	SM-OR-50x3.5-EPDM	4.3		Der O-Ring 50 x 3,5 mm EPDM 70 ist in unserem Sortiment verfügbar.
+qwen3:8b	q064	fr	cross	ANSWERED	1	SM-OR-5x1.5-NBR	SM-OR-5x1.5-NBR	3.7		Le joint torique 5 x 1,5 mm NBR est disponible en stock.
+qwen3:8b	q065	fr	cross	ANSWERED	1	KW-6001-2RS|RT-6001-2RS|RT-6001-ZZ|KW-6001-ZZ	KW-6001|KW-6001-ZZ|KW-6001-2RS|RT-6001|RT-6001-ZZ|RT-6001-2RS	5.3		Nous proposons plusieurs roulements à billes 12 x 28 mm. Voici les codes correspondants :
+qwen3:8b	q066	it	cross	ANSWERED	1	KW-6202-ZZ|RT-6202-ZZ|KW-6202-2RS|KW-6202|RT-6202	KW-6202|KW-6202-ZZ|KW-6202-2RS|RT-6202|RT-6202-ZZ|RT-6202-2RS	7.3		I cuscinetti a sfere con dimensioni 15 x 35 mm sono disponibili con codici KW-6202-ZZ, RT-6202-ZZ, KW-6202-2RS, KW-6202 e RT-6202.
+qwen3:8b	q067	en	cross	ANSWERED	1	RT-6206-2RS|RT-6206|RT-6206-ZZ|KW-6206-2RS|KW-6206|KW-6206-ZZ	KW-6206|KW-6206-ZZ|KW-6206-2RS|RT-6206|RT-6206-ZZ|RT-6206-2RS	5.6		For a deep groove ball bearing with dimensions 30 x 62 mm, you can choose from the following products:
+qwen3:8b	q068	de	cross	ANSWERED	1	KW-6303-2RS|KW-6303-ZZ|RT-6303|RT-6303-2RS|KW-6303|RT-6303-ZZ	KW-6303|KW-6303-ZZ|KW-6303-2RS|RT-6303|RT-6303-ZZ|RT-6303-2RS	6.6		Für ein Rillenkugellager mit den Maßen 17 x 47 mm gibt es mehrere Optionen.
+qwen3:8b	n01	en	absent	ANSWERED	1			2.6		None of the listed products are suitable for a cordless lawn mower.
+qwen3:8b	n02	de	absent	ANSWERED	1			2.8		Leider haben wir keine Kaffeemaschine mit Mahlwerk in unserem Sortiment.
+qwen3:8b	n03	fr	absent	ANSWERED	1			2.8		Aucun produit ne correspond à votre question.

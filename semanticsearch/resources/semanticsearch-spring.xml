@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ No Spring Boot here, so no auto-configuration: every Spring AI object is a plain bean.
+ Factories are static methods (factory-method), so swapping a provider is one bean.
+-->
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!--
+	 Embedding provider: semanticsearch.embedding.provider = ollama (local bge-m3, the default) or voyage (hosted).
+	 The aliases at the bottom point semanticSearchEmbeddingModel (queries) and semanticSearchDocumentEmbeddingModel
+	 (indexing) at the chosen provider's beans. Switching provider means a full reindex: vector spaces differ.
+	-->
+
+	<!-- Voyage, query side -->
+	<bean id="voyageQueryEmbeddingModel" class="io.github.emenowicz.semanticsearch.VoyageEmbeddingModel">
+		<constructor-arg value="${semanticsearch.voyage.api.key}"/>
+		<constructor-arg value="${semanticsearch.voyage.query.model}"/>
+		<constructor-arg value="${semanticsearch.voyage.dimensions}"/>
+		<constructor-arg value="query"/>
+		<constructor-arg value="${semanticsearch.voyage.timeout.ms}"/>
+		<constructor-arg value="1000"/>
+		<!-- no retry on 429: a shopper waiting 21s is worse than a failed semantic search -->
+		<constructor-arg value="1"/>
+		<property name="cacheSize" value="${semanticsearch.voyage.query.cache.size}"/>
+		<property name="maxRequestsPerMinute" value="${semanticsearch.voyage.query.max.requests.per.minute}"/>
+	</bean>
+
+	<!-- Voyage, index side: large builds the index once; Voyage 4 models share one space with the voyage-4 queries -->
+	<bean id="voyageDocumentEmbeddingModel" class="io.github.emenowicz.semanticsearch.VoyageEmbeddingModel">
+		<constructor-arg value="${semanticsearch.voyage.api.key}"/>
+		<constructor-arg value="${semanticsearch.voyage.document.model}"/>
+		<constructor-arg value="${semanticsearch.voyage.dimensions}"/>
+		<constructor-arg value="document"/>
+		<constructor-arg value="${semanticsearch.voyage.document.timeout.ms}"/>
+		<constructor-arg value="${semanticsearch.voyage.document.batch.size}"/>
+		<constructor-arg value="${semanticsearch.voyage.document.max.attempts}"/>
+		<property name="minIntervalMs" value="${semanticsearch.voyage.document.min.interval.ms}"/>
+	</bean>
+
+	<!-- Ollama, both sides -->
+	<bean id="ollamaEmbeddingModel" class="io.github.emenowicz.semanticsearch.OllamaModels" factory-method="embedding">
+		<constructor-arg value="${semanticsearch.ollama.url}"/>
+		<constructor-arg value="${semanticsearch.embedding.ollama.model}"/>
+		<constructor-arg value="${semanticsearch.embedding.ollama.timeout.ms}"/>
+	</bean>
+	<alias name="ollamaEmbeddingModel" alias="ollamaQueryEmbeddingModel"/>
+	<alias name="ollamaEmbeddingModel" alias="ollamaDocumentEmbeddingModel"/>
+
+	<alias name="${semanticsearch.embedding.provider}QueryEmbeddingModel" alias="semanticSearchEmbeddingModel"/>
+	<alias name="${semanticsearch.embedding.provider}DocumentEmbeddingModel" alias="semanticSearchDocumentEmbeddingModel"/>
+
+	<!-- stored vectors: productEmbeddingJob embeds new and changed texts, the indexer only reads them -->
+	<bean id="productEmbeddingService" class="io.github.emenowicz.semanticsearch.ProductEmbeddingService">
+		<property name="flexibleSearchService" ref="flexibleSearchService"/>
+		<property name="modelService" ref="modelService"/>
+		<property name="commonI18NService" ref="commonI18NService"/>
+		<property name="embeddingModel" ref="semanticSearchDocumentEmbeddingModel"/>
+		<!-- any change here re-embeds everything on the next job run: the old vectors are another space.
+		 ponytail: holds both providers' models, so changing the unused one re-embeds too; resolve per provider if that bites -->
+		<property name="modelId"
+			value="${semanticsearch.embedding.provider}|${semanticsearch.embedding.ollama.model}|${semanticsearch.voyage.document.model}|${semanticsearch.voyage.dimensions}"/>
+	</bean>
+
+	<bean id="productEmbeddingJob" class="io.github.emenowicz.semanticsearch.ProductEmbeddingJob"
+		parent="abstractJobPerformable">
+		<property name="facetSearchConfigService" ref="facetSearchConfigService"/>
+		<property name="productEmbeddingService" ref="productEmbeddingService"/>
+		<property name="facetSearchConfigName" value="${semanticsearch.embedding.index}"/>
+		<property name="batchSize" value="${semanticsearch.embedding.job.batch.size}"/>
+	</bean>
+
+	<!-- SolrIndexedProperty.fieldValueProvider = productEmbeddingValueResolver; localized, one vector per language -->
+	<bean id="productEmbeddingValueResolver" class="io.github.emenowicz.semanticsearch.ProductEmbeddingValueResolver"
+		parent="abstractValueResolver">
+		<property name="qualifierProvider" ref="languageQualifierProvider"/>
+		<property name="productEmbeddingService" ref="productEmbeddingService"/>
+	</bean>
+
+	<bean id="semanticSearchService" class="io.github.emenowicz.semanticsearch.SemanticSearchService">
+		<property name="solrFacetSearchConfigSelectionStrategy" ref="solrFacetSearchConfigSelectionStrategy"/>
+		<property name="facetSearchConfigService" ref="facetSearchConfigService"/>
+		<property name="solrIndexService" ref="solrIndexService"/>
+		<property name="solrSearchProviderFactory" ref="solrSearchProviderFactory"/>
+		<property name="fieldNameProvider" ref="solrFieldNameProvider"/>
+		<property name="commerceCommonI18NService" ref="commerceCommonI18NService"/>
+		<property name="embeddingModel" ref="semanticSearchEmbeddingModel"/>
+	</bean>
+
+	<!-- RAG: the answer model is any Spring AI ChatModel; locally Ollama, swap this bean for another provider -->
+	<bean id="semanticAnswerChatModel" class="io.github.emenowicz.semanticsearch.OllamaModels" factory-method="chat">
+		<constructor-arg value="${semanticsearch.ollama.url}"/>
+		<constructor-arg value="${semanticsearch.answer.ollama.model}"/>
+		<constructor-arg value="${semanticsearch.answer.timeout.ms}"/>
+		<constructor-arg value="${semanticsearch.answer.context.tokens}"/>
+		<constructor-arg value="${semanticsearch.answer.max.tokens}"/>
+		<constructor-arg value="${semanticsearch.answer.disable.thinking}"/>
+	</bean>
+
+	<bean id="semanticAnswerService" class="io.github.emenowicz.semanticsearch.SemanticAnswerService">
+		<property name="semanticSearchService" ref="semanticSearchService"/>
+		<property name="chatModel" ref="semanticAnswerChatModel"/>
+		<property name="commonI18NService" ref="commonI18NService"/>
+		<property name="topK" value="${semanticsearch.answer.top.k}"/>
+		<property name="minWords" value="${semanticsearch.answer.min.words}"/>
+		<property name="cacheSize" value="${semanticsearch.answer.cache.size}"/>
+		<property name="maxAnswersPerDay" value="${semanticsearch.answer.max.per.day}"/>
+	</bean>
+
+	<!--
+	 No SolrVectorStore bean: the platform's Solr needs HTTPS and basic auth, and its clients come per index
+	 from solrSearchProviderFactory. SemanticSearchService builds the store per call from provider.getClient(index).
+	-->
+
+</beans>

@@ -1,0 +1,3 @@
+config	queries	hit1	hit5	mrr	recall10	mrr_code	mrr_synonym	mrr_constraint	mrr_need	mrr_cross	new_tokens
+index-large/query-4/1024	68	0.882	1.000	0.927	0.979	0.889	0.963	0.836	0.889	1.000	0
+bge-m3/1024 (ollama)	68	0.794	0.971	0.862	0.938	1.000	0.852	0.685	0.694	0.972	0

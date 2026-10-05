@@ -1,0 +1,35 @@
+label	query	lang	kind	status	correct	cited	expected	seconds	reason	answer
+qwen3:8b	q01	en	synonym	ANSWERED	1	eval-p06	eval-p06|eval-p17	3.6		For cutting wood, we recommend the Tornal JS-80 pendulum saw, 800 W.
+qwen3:8b	q02	en	synonym	ANSWERED	0		eval-p08	2.9		None of the listed products are angle grinders.
+qwen3:8b	q03	en	synonym	ANSWERED	1	eval-p09	eval-p09	3.5		We have a Nivelo pocket rule 5 m x 19 mm, which is a steel blade with metric scale, belt clip and automatic lock.
+qwen3:8b	q04	en	synonym	ANSWERED	1	eval-p13	eval-p13	3.1		Use the Nivelo wall scanner W50 to find pipes and cables in the wall before drilling.
+qwen3:8b	q05	en	synonym	ANSWERED	1	eval-p28	eval-p28	3.0		For outdoor wooden furniture, we recommend using water-resistant wood glue D3, 750 g.
+qwen3:8b	q06	en	synonym	ANSWERED	1	eval-p39	eval-p39	3.6		For draining a flooded basement, we recommend the Dirty water submersible pump 400 W with float switch.
+qwen3:8b	q07	en	synonym	ANSWERED	1	eval-p22	eval-p22	3.2		To hang a shelf on a plasterboard wall, use the Metal cavity fixings for plasterboard, 50 pieces.
+qwen3:8b	q08	en	constraint	ANSWERED	1	eval-p02	eval-p02	3.7		The Tornal ID-650 percussion drill, 650 W, is suitable for your needs.
+qwen3:8b	q09	de	cross	ANSWERED	1	eval-p01	eval-p01|eval-p02	3.6		Für Beton empfehlen wir die Brixo HD-750 SDS-plus Bohrmaschine, 750 W.
+qwen3:8b	q10	de	cross	ANSWERED	1	eval-p19	eval-p19	4.2		Für Torx-Bits für Akkuschrauber empfehlen wir die Bit-Set PH/PZ/TX, 32-teilig.
+qwen3:8b	q11	de	cross	ANSWERED	1	eval-p29	eval-p29	3.2		Für Wohnzimmerwände empfehlen wir die Innendispersion, weiss matt, 10 l.
+qwen3:8b	q12	de	cross	ANSWERED	1	eval-p30	eval-p30	3.2		Verwenden Sie den Rostschutzgrund, um das Gartentor vor Rost zu schützen.
+qwen3:8b	q13	de	cross	ANSWERED	1	eval-p31	eval-p31	3.6		Für eine Küchenarmatur mit Brause empfehlen wir den Einhebel-Spültischmischer mit Ausziehbrause, verchromt.
+qwen3:8b	q14	de	cross	ANSWERED	1	eval-p36	eval-p36	3.2		Der Leitungsschutzschalter B16 ist für den Schutz von Steckdosenkreisen geeignet.
+qwen3:8b	q15	de	constraint	ANSWERED	1	eval-p12	eval-p12	3.4		Die Altura Alu-Stehleiter, 5 Stufen, ist die passende Leiter mit mehr als 4 Stufen.
+qwen3:8b	q16	fr	cross	ANSWERED	1	eval-p06|eval-p17	eval-p06	4.7		Pour une scie sauteuse, nous vous recommandons le Tornal JS-80 scie sauteuse, 800 W ou les lames de scie sauteuse à queue en T pour bois, lot de 5.
+qwen3:8b	q17	fr	cross	ANSWERED	0		eval-p08	2.6		Nous n'avons pas de meuleuse d'angle dans notre catalogue.
+qwen3:8b	q18	fr	cross	ANSWERED	1	eval-p10	eval-p10	3.5		Le Nivelo niveau à bulle 60 cm est adapté à vos mesures horizontales, verticales et à 45°.
+qwen3:8b	q19	fr	cross	ANSWERED	1	eval-p21	eval-p21	3.6		Pour les vis pour panneaux d'aggloméré, nous vous recommandons les vis agglo 4 x 40 mm.
+qwen3:8b	q20	fr	cross	ANSWERED	1	eval-p27	eval-p27	3.7		Nous proposons des carreaux muraux en céramique blanc brillant pour salle de bain.
+qwen3:8b	q21	fr	cross	ANSWERED	1	eval-p37	eval-p37	3.2		Le régulateur d'ambiance programmable hebdomadaire convient pour le chauffage.
+qwen3:8b	q22	fr	cross	ANSWERED	1	eval-p38	eval-p38	3.2		La pompe de bassin 2500 l/h est adaptée pour votre bassin de jardin.
+qwen3:8b	q23	it	cross	ANSWERED	1	eval-p03	eval-p03	3.2		Hai bisogno del martello da carpentiere Hektor eval-p03.
+qwen3:8b	q24	it	cross	ANSWERED	1	eval-p11	eval-p11	3.2		Hai bisogno della Hektor chiave inglese regolabile 250 mm.
+qwen3:8b	q25	it	cross	ANSWERED	1	eval-p18	eval-p18	4.3		La carta abrasiva 230 x 280 mm, grana 120, 10 fogli è adatta per la levigatura a mano di legno e vernice.
+qwen3:8b	q26	it	cross	ANSWERED	0	eval-p20	eval-p25	3.2		La maniglia per porta in acciaio inox è disponibile in codice eval-p20.
+qwen3:8b	q27	it	cross	ANSWERED	1	eval-p34	eval-p34	2.8		La prolunga per esterno è il prodotto eval-p34.
+qwen3:8b	q28	it	cross	ANSWERED	1	eval-p26	eval-p26	3.2		I pannelli isolanti per pareti sono disponibili in polistirene estruso rigido.
+qwen3:8b	q29	de	mixed	ANSWERED	1	eval-p07	eval-p07	3.4		Für Metallrohre empfehlen wir den Hektor Metallsägebogen 300 mm.
+qwen3:8b	q30	en	mixed	ANSWERED	1	eval-p16	eval-p16	4.0		For a circular saw blade for wood, we recommend the Carbide blade 190 x 30 mm, 48 teeth, for wood.
+qwen3:8b	q31	fr	constraint	ANSWERED	1	eval-p38	eval-p38	2.8		La pompe de bassin 2500 l/h convient à votre besoin.
+qwen3:8b	n01	en	absent	ANSWERED	1			2.2		We don't have any cordless lawn mowers in stock.
+qwen3:8b	n02	de	absent	ANSWERED	1			2.7		Leider haben wir keine Kaffeemaschine mit Mahlwerk in unserem Sortiment.
+qwen3:8b	n03	fr	absent	ANSWERED	1			2.2		Aucun produit ne correspond à votre question.

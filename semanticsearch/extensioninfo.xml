@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extensioninfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="extensioninfo.xsd">
+	<!-- usemaven: the build copies the jars listed in external-dependencies.xml into lib/ -->
+	<extension abstractclassprefix="Generated" classprefix="Semanticsearch" name="semanticsearch" usemaven="true"
+			description="Semantic product search: embeddings in the platform's Solr index, kNN through spring-ai-solr-store">
+		<!-- the product index and its SolrClient -->
+		<requires-extension name="solrfacetsearch"/>
+		<!-- OCC endpoint; BaseSite.solrFacetSearchConfiguration comes from commerceservices -->
+		<requires-extension name="commercewebservices"/>
+		<coremodule generated="true" manager="de.hybris.platform.jalo.extension.GenericManager" packageroot="io.github.emenowicz.semanticsearch"/>
+	</extension>
+</extensioninfo>

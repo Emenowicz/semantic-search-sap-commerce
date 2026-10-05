@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ Copy to hybris/config/localextensions.xml. Minimal set for semantic search: no accelerator, no Backoffice.
+ commercewebservices brings OCC and pulls in commerceservices, solrfacetsearch and their dependencies.
+-->
+<hybrisconfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="resources/schemas/extensions.xsd">
+	<extensions>
+		<path dir="${HYBRIS_BIN_DIR}"/>
+		<!-- this repository; on CCv2, put semanticsearch/ under core-customize/hybris/bin/custom instead -->
+		<path dir="/path/to/semantic-search-sap-commerce"/>
+
+		<extension name="hac"/>
+		<extension name="solrserver"/>
+		<extension name="commercewebservices"/>
+		<extension name="semanticsearch"/>
+	</extensions>
+</hybrisconfig>

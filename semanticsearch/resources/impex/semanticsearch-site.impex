@@ -1,0 +1,14 @@
+# A base site for the OCC endpoint: /occ/v2/semanticsearch/products/semantic-search
+# The site points at the product index, so the service finds it without a hardcoded config name.
+# Import after semanticsearch-solr.impex.
+
+# OCC activates the store's catalogs in the session, which needs an active version. A real shop
+# would have Online here; the spike indexes Staged.
+INSERT_UPDATE CatalogVersion; catalog(id)[unique = true]; version[unique = true]; active
+; partsCatalog ; Staged ; true
+
+INSERT_UPDATE BaseStore; uid[unique = true]; languages(isocode); currencies(isocode); defaultLanguage(isocode); defaultCurrency(isocode); net; catalogs(id)
+; semanticsearch ; en,de,fr,it ; CHF ; de ; CHF ; false ; partsCatalog
+
+INSERT_UPDATE BaseSite; uid[unique = true]; stores(uid); solrFacetSearchConfiguration(name); channel(code)
+; semanticsearch ; semanticsearch ; semanticsearchIndex ; B2C

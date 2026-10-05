@@ -1,0 +1,137 @@
+config	query	lang	kind	expected	top1	rank	hit1	hit5	rr	recall10	index_model	query_model	dims
+index-large/query-4/1024	q001	en	code	RT-6204-2RS|KW-6204-2RS	RT-6204-2RS	1	1	1	1.000	1.000	voyage-4-large	voyage-4	1024
+index-large/query-4/1024	q002	de	code	RT-6205-2RS|KW-6205-2RS	RT-6005-2RS	3	0	1	0.333	1.000	voyage-4-large	voyage-4	1024
+index-large/query-4/1024	q003	fr	code	RT-6204-ZZ|KW-6204-ZZ	KW-6204-ZZ	1	1	1	1.000	1.000	voyage-4-large	voyage-4	1024
+index-large/query-4/1024	q004	it	code	KW-6302-2RS|RT-6302-ZZ|KW-6302|RT-6302|KW-6302-ZZ|RT-6302-2RS	RT-6206	3	0	1	0.333	0.333	voyage-4-large	voyage-4	1024
+index-large/query-4/1024	q005	en	code	FX-912-M8x30-A2	FX-912-M8x30-A2	1	1	1	1.000	1.000	voyage-4-large	voyage-4	1024
+index-large/query-4/1024	q006	de	code	FX-912-M10x40-A4	FX-912-M10x40-A4	1	1	1	1.000	1.000	voyage-4-large	voyage-4	1024
+index-large/query-4/1024	q007	de	code	FX-934-M12-8.8	FX-934-M12-8.8	1	1	1	1.000	1.000	voyage-4-large	voyage-4	1024
+index-large/query-4/1024	q008	en	code	BL-SPZ-1250	BL-SPZ-1250	1	1	1	1.000	1.000	voyage-4-large	voyage-4	1024
+index-large/query-4/1024	q009	it	code	BL-XPZ-1000	BL-XPZ-1000	1	1	1	1.000	1.000	voyage-4-large	voyage-4	1024
+index-large/query-4/1024	q010	fr	code	SM-OR-30x3-NBR	SM-OR-30x3-NBR	1	1	1	1.000	1.000	voyage-4-large	voyage-4	1024
+index-large/query-4/1024	q011	de	code	PF-EL-8-G14|PF-ST-8-G14	PF-ST-8-G14	1	1	1	1.000	1.000	voyage-4-large	voyage-4	1024
+index-large/query-4/1024	q012	en	code	GX-M20-MS	GX-M20-MS	1	1	1	1.000	1.000	voyage-4-large	voyage-4	1024
+index-large/query-4/1024	q013	de	synonym	FX-912-M6x20-A4|FX-912-M6x20-A2	FX-912-M6x20-A2	1	1	1	1.000	1.000	voyage-4-large	voyage-4	1024
+index-large/query-4/1024	q014	fr	synonym	FX-912-M8x40-A4	FX-912-M8x40-A4	1	1	1	1.000	1.000	voyage-4-large	voyage-4	1024
+index-large/query-4/1024	q015	it	synonym	FX-912-M5x16-A4|FX-912-M5x16-8.8|FX-912-M5x16-A2	FX-912-M5x16-8.8	1	1	1	1.000	1.000	voyage-4-large	voyage-4	1024
+index-large/query-4/1024	q016	en	synonym	FX-912-M12x50-8.8	FX-912-M12x50-8.8	1	1	1	1.000	1.000	voyage-4-large	voyage-4	1024
+index-large/query-4/1024	q017	de	synonym	FX-912-M4x10-A4|FX-912-M4x10-A2	FX-912-M4x10-A4	1	1	1	1.000	1.000	voyage-4-large	voyage-4	1024
+index-large/query-4/1024	q018	it	synonym	FX-912-M10x30-8.8	FX-912-M10x30-8.8	1	1	1	1.000	1.000	voyage-4-large	voyage-4	1024
+index-large/query-4/1024	q019	de	synonym	RT-6304-2RS|KW-6204-2RS|KW-6304-2RS|RT-6004-2RS|RT-6204-2RS|KW-6004-2RS	KW-6304-2RS	1	1	1	1.000	1.000	voyage-4-large	voyage-4	1024
+index-large/query-4/1024	q020	en	synonym	RT-6205-2RS|KW-6005-2RS|KW-6205-2RS|RT-6005-2RS	KW-6205-2RS	1	1	1	1.000	1.000	voyage-4-large	voyage-4	1024
+index-large/query-4/1024	q021	fr	synonym	RT-6203-2RS|KW-6203-2RS	RT-6203-2RS	1	1	1	1.000	1.000	voyage-4-large	voyage-4	1024
+index-large/query-4/1024	q022	it	synonym	RT-6203-ZZ|KW-6203-ZZ	RT-6206-ZZ	3	0	1	0.333	1.000	voyage-4-large	voyage-4	1024
+index-large/query-4/1024	q023	de	synonym	PF-EL-6-G14|PF-EL-6-G18	PF-EL-6-G14	1	1	1	1.000	1.000	voyage-4-large	voyage-4	1024
+index-large/query-4/1024	q024	fr	synonym	PF-EL-10-G38	PF-EL-10-G38	1	1	1	1.000	1.000	voyage-4-large	voyage-4	1024
+index-large/query-4/1024	q025	it	synonym	PF-T-12	PF-T-12	1	1	1	1.000	1.000	voyage-4-large	voyage-4	1024
+index-large/query-4/1024	q026	en	synonym	PF-T-4	PF-T-4	1	1	1	1.000	1.000	voyage-4-large	voyage-4	1024
+index-large/query-4/1024	q027	de	synonym	BL-SPA-1800	BL-SPA-1800	1	1	1	1.000	1.000	voyage-4-large	voyage-4	1024
+index-large/query-4/1024	q028	fr	synonym	BL-XPZ-1500	BL-XPZ-1500	1	1	1	1.000	1.000	voyage-4-large	voyage-4	1024
+index-large/query-4/1024	q029	de	synonym	FX-934-M8-A4	FX-934-M8-A4	1	1	1	1.000	1.000	voyage-4-large	voyage-4	1024
+index-large/query-4/1024	q030	en	synonym	FX-912-M6x25-A4	FX-912-M6x25-A4	1	1	1	1.000	1.000	voyage-4-large	voyage-4	1024
+index-large/query-4/1024	q031	de	constraint	EM-MS-2.5-4|VQ-MS-2.5-4	VQ-MS-2.5-4	1	1	1	1.000	1.000	voyage-4-large	voyage-4	1024
+index-large/query-4/1024	q032	en	constraint	EM-MS-6-10|VQ-MS-6-10	VQ-MS-13-18	5	0	1	0.200	1.000	voyage-4-large	voyage-4	1024
+index-large/query-4/1024	q033	fr	constraint	EM-MS-9-14|VQ-MS-9-14	VQ-MS-13-18	2	0	1	0.500	1.000	voyage-4-large	voyage-4	1024
+index-large/query-4/1024	q034	it	constraint	VQ-MS-17-23|VQ-MS-20-25|EM-MS-17-23|EM-MS-20-25	VQ-MS-20-25	1	1	1	1.000	1.000	voyage-4-large	voyage-4	1024
+index-large/query-4/1024	q035	de	constraint	EM-C38-230AC|VQ-C32-230AC|VQ-C38-230AC|EM-C25-230AC|VQ-C25-230AC|EM-C32-230AC	VQ-C25-230AC	1	1	1	1.000	0.333	voyage-4-large	voyage-4	1024
+index-large/query-4/1024	q036	en	constraint	VQ-C18-24DC|VQ-C38-24DC|EM-C18-24DC|VQ-C25-24DC|EM-C38-24DC|EM-C25-24DC|VQ-C32-24DC|EM-C32-24DC	VQ-C18-24DC	1	1	1	1.000	0.875	voyage-4-large	voyage-4	1024
+index-large/query-4/1024	q037	it	constraint	EM-C9-24DC|VQ-C9-24DC	VQ-C9-24DC	1	1	1	1.000	1.000	voyage-4-large	voyage-4	1024
+index-large/query-4/1024	q038	de	constraint	SM-OR-20x2.5-FKM	SM-OR-20x2.5-FKM	1	1	1	1.000	1.000	voyage-4-large	voyage-4	1024
+index-large/query-4/1024	q039	en	constraint	SM-OR-30x3-EPDM	SM-OR-30x3-EPDM	1	1	1	1.000	1.000	voyage-4-large	voyage-4	1024
+index-large/query-4/1024	q040	fr	constraint	SM-OR-10x2-FKM|SM-OR-10x2-NBR	SM-OR-10x2-NBR	1	1	1	1.000	1.000	voyage-4-large	voyage-4	1024
+index-large/query-4/1024	q041	it	constraint	GX-M25-PA|GX-M20-MS|GX-M20-PA|GX-M25-MS	GX-M16-PA	2	0	1	0.500	1.000	voyage-4-large	voyage-4	1024
+index-large/query-4/1024	q042	de	constraint	GX-M32-MS|GX-M25-MS	GX-M16-MS	2	0	1	0.500	1.000	voyage-4-large	voyage-4	1024
+index-large/query-4/1024	q043	en	constraint	GX-M12-PA|GX-M16-MS|GX-M16-PA|GX-M12-MS	GX-M12-PA	1	1	1	1.000	1.000	voyage-4-large	voyage-4	1024
+index-large/query-4/1024	q044	fr	constraint	EM-C32-230AC|VQ-C32-230AC	VQ-C32-230AC	1	1	1	1.000	1.000	voyage-4-large	voyage-4	1024
+index-large/query-4/1024	q045	de	need	LB-H1-1000|LB-H1-400	LB-H1-1000	1	1	1	1.000	1.000	voyage-4-large	voyage-4	1024
+index-large/query-4/1024	q046	en	need	LB-EM-400	LB-EM-400	1	1	1	1.000	1.000	voyage-4-large	voyage-4	1024
+index-large/query-4/1024	q047	fr	need	LB-HT-400	LB-HT-400	1	1	1	1.000	1.000	voyage-4-large	voyage-4	1024
+index-large/query-4/1024	q048	it	need	LB-EP2-400	LB-EP2-400	1	1	1	1.000	1.000	voyage-4-large	voyage-4	1024
+index-large/query-4/1024	q049	de	need	SM-OR-15x2.5-FKM|SM-OR-15x2.5-NBR	SM-OR-15x2.5-NBR	1	1	1	1.000	1.000	voyage-4-large	voyage-4	1024
+index-large/query-4/1024	q050	en	need	PF-U-8	PF-EL-8-G38	3	0	1	0.333	1.000	voyage-4-large	voyage-4	1024
+index-large/query-4/1024	q051	en	cross	FX-912-M4x16-A2	FX-912-M4x16-A2	1	1	1	1.000	1.000	voyage-4-large	voyage-4	1024
+index-large/query-4/1024	q052	de	cross	FX-912-M5x20-8.8	FX-912-M5x20-8.8	1	1	1	1.000	1.000	voyage-4-large	voyage-4	1024
+index-large/query-4/1024	q053	fr	cross	FX-912-M6x30-A4	FX-912-M6x30-A4	1	1	1	1.000	1.000	voyage-4-large	voyage-4	1024
+index-large/query-4/1024	q054	it	cross	FX-912-M8x25-A2	FX-912-M8x25-A2	1	1	1	1.000	1.000	voyage-4-large	voyage-4	1024
+index-large/query-4/1024	q055	en	cross	FX-912-M8x35-8.8	FX-912-M8x35-8.8	1	1	1	1.000	1.000	voyage-4-large	voyage-4	1024
+index-large/query-4/1024	q056	de	cross	FX-912-M10x50-A4	FX-912-M10x50-A4	1	1	1	1.000	1.000	voyage-4-large	voyage-4	1024
+index-large/query-4/1024	q057	fr	cross	FX-912-M12x40-A2	FX-912-M12x40-A2	1	1	1	1.000	1.000	voyage-4-large	voyage-4	1024
+index-large/query-4/1024	q058	it	cross	FX-912-M6x40-8.8	FX-912-M6x40-8.8	1	1	1	1.000	1.000	voyage-4-large	voyage-4	1024
+index-large/query-4/1024	q059	de	cross	SM-OR-8x2-FKM	SM-OR-8x2-FKM	1	1	1	1.000	1.000	voyage-4-large	voyage-4	1024
+index-large/query-4/1024	q060	fr	cross	SM-OR-12x2-EPDM	SM-OR-12x2-EPDM	1	1	1	1.000	1.000	voyage-4-large	voyage-4	1024
+index-large/query-4/1024	q061	it	cross	SM-OR-25x3-NBR	SM-OR-25x3-NBR	1	1	1	1.000	1.000	voyage-4-large	voyage-4	1024
+index-large/query-4/1024	q062	en	cross	SM-OR-40x3.5-FKM	SM-OR-40x3.5-FKM	1	1	1	1.000	1.000	voyage-4-large	voyage-4	1024
+index-large/query-4/1024	q063	de	cross	SM-OR-50x3.5-EPDM	SM-OR-50x3.5-EPDM	1	1	1	1.000	1.000	voyage-4-large	voyage-4	1024
+index-large/query-4/1024	q064	fr	cross	SM-OR-5x1.5-NBR	SM-OR-5x1.5-NBR	1	1	1	1.000	1.000	voyage-4-large	voyage-4	1024
+index-large/query-4/1024	q065	fr	cross	RT-6001|KW-6001-ZZ|KW-6001-2RS|RT-6001-ZZ|KW-6001|RT-6001-2RS	RT-6001-2RS	1	1	1	1.000	1.000	voyage-4-large	voyage-4	1024
+index-large/query-4/1024	q066	it	cross	KW-6202-ZZ|KW-6202|RT-6202-2RS|RT-6202|RT-6202-ZZ|KW-6202-2RS	KW-6202-2RS	1	1	1	1.000	1.000	voyage-4-large	voyage-4	1024
+index-large/query-4/1024	q067	en	cross	KW-6206-2RS|KW-6206-ZZ|KW-6206|RT-6206-2RS|RT-6206|RT-6206-ZZ	KW-6206	1	1	1	1.000	1.000	voyage-4-large	voyage-4	1024
+index-large/query-4/1024	q068	de	cross	KW-6303-2RS|KW-6303-ZZ|KW-6303|RT-6303|RT-6303-ZZ|RT-6303-2RS	RT-6303-2RS	1	1	1	1.000	1.000	voyage-4-large	voyage-4	1024
+bge-m3/1024 (ollama)	q001	en	code	RT-6204-2RS|KW-6204-2RS	RT-6204-2RS	1	1	1	1.000	1.000	ollama:bge-m3	ollama:bge-m3	1024
+bge-m3/1024 (ollama)	q002	de	code	RT-6205-2RS|KW-6205-2RS	RT-6205-2RS	1	1	1	1.000	1.000	ollama:bge-m3	ollama:bge-m3	1024
+bge-m3/1024 (ollama)	q003	fr	code	RT-6204-ZZ|KW-6204-ZZ	RT-6204-ZZ	1	1	1	1.000	1.000	ollama:bge-m3	ollama:bge-m3	1024
+bge-m3/1024 (ollama)	q004	it	code	KW-6302-2RS|RT-6302-ZZ|KW-6302|RT-6302|KW-6302-ZZ|RT-6302-2RS	RT-6302	1	1	1	1.000	0.833	ollama:bge-m3	ollama:bge-m3	1024
+bge-m3/1024 (ollama)	q005	en	code	FX-912-M8x30-A2	FX-912-M8x30-A2	1	1	1	1.000	1.000	ollama:bge-m3	ollama:bge-m3	1024
+bge-m3/1024 (ollama)	q006	de	code	FX-912-M10x40-A4	FX-912-M10x40-A4	1	1	1	1.000	1.000	ollama:bge-m3	ollama:bge-m3	1024
+bge-m3/1024 (ollama)	q007	de	code	FX-934-M12-8.8	FX-934-M12-8.8	1	1	1	1.000	1.000	ollama:bge-m3	ollama:bge-m3	1024
+bge-m3/1024 (ollama)	q008	en	code	BL-SPZ-1250	BL-SPZ-1250	1	1	1	1.000	1.000	ollama:bge-m3	ollama:bge-m3	1024
+bge-m3/1024 (ollama)	q009	it	code	BL-XPZ-1000	BL-XPZ-1000	1	1	1	1.000	1.000	ollama:bge-m3	ollama:bge-m3	1024
+bge-m3/1024 (ollama)	q010	fr	code	SM-OR-30x3-NBR	SM-OR-30x3-NBR	1	1	1	1.000	1.000	ollama:bge-m3	ollama:bge-m3	1024
+bge-m3/1024 (ollama)	q011	de	code	PF-EL-8-G14|PF-ST-8-G14	PF-EL-8-G14	1	1	1	1.000	1.000	ollama:bge-m3	ollama:bge-m3	1024
+bge-m3/1024 (ollama)	q012	en	code	GX-M20-MS	GX-M20-MS	1	1	1	1.000	1.000	ollama:bge-m3	ollama:bge-m3	1024
+bge-m3/1024 (ollama)	q013	de	synonym	FX-912-M6x20-A4|FX-912-M6x20-A2	FX-912-M6x20-A2	1	1	1	1.000	1.000	ollama:bge-m3	ollama:bge-m3	1024
+bge-m3/1024 (ollama)	q014	fr	synonym	FX-912-M8x40-A4	FX-912-M8x40-A4	1	1	1	1.000	1.000	ollama:bge-m3	ollama:bge-m3	1024
+bge-m3/1024 (ollama)	q015	it	synonym	FX-912-M5x16-A4|FX-912-M5x16-8.8|FX-912-M5x16-A2	KW-6202	0	0	0	0.000	0.000	ollama:bge-m3	ollama:bge-m3	1024
+bge-m3/1024 (ollama)	q016	en	synonym	FX-912-M12x50-8.8	FX-912-M12x50-8.8	1	1	1	1.000	1.000	ollama:bge-m3	ollama:bge-m3	1024
+bge-m3/1024 (ollama)	q017	de	synonym	FX-912-M4x10-A4|FX-912-M4x10-A2	FX-912-M4x10-8.8	2	0	1	0.500	1.000	ollama:bge-m3	ollama:bge-m3	1024
+bge-m3/1024 (ollama)	q018	it	synonym	FX-912-M10x30-8.8	FX-912-M10x30-8.8	1	1	1	1.000	1.000	ollama:bge-m3	ollama:bge-m3	1024
+bge-m3/1024 (ollama)	q019	de	synonym	RT-6304-2RS|KW-6204-2RS|KW-6304-2RS|RT-6004-2RS|RT-6204-2RS|KW-6004-2RS	KW-6304-2RS	1	1	1	1.000	0.667	ollama:bge-m3	ollama:bge-m3	1024
+bge-m3/1024 (ollama)	q020	en	synonym	RT-6205-2RS|KW-6005-2RS|KW-6205-2RS|RT-6005-2RS	RT-6205-2RS	1	1	1	1.000	1.000	ollama:bge-m3	ollama:bge-m3	1024
+bge-m3/1024 (ollama)	q021	fr	synonym	RT-6203-2RS|KW-6203-2RS	RT-6203-2RS	1	1	1	1.000	1.000	ollama:bge-m3	ollama:bge-m3	1024
+bge-m3/1024 (ollama)	q022	it	synonym	RT-6203-ZZ|KW-6203-ZZ	KW-6203-ZZ	1	1	1	1.000	1.000	ollama:bge-m3	ollama:bge-m3	1024
+bge-m3/1024 (ollama)	q023	de	synonym	PF-EL-6-G14|PF-EL-6-G18	PF-EL-6-G18	1	1	1	1.000	1.000	ollama:bge-m3	ollama:bge-m3	1024
+bge-m3/1024 (ollama)	q024	fr	synonym	PF-EL-10-G38	PF-ST-10-G38	2	0	1	0.500	1.000	ollama:bge-m3	ollama:bge-m3	1024
+bge-m3/1024 (ollama)	q025	it	synonym	PF-T-12	PF-T-12	1	1	1	1.000	1.000	ollama:bge-m3	ollama:bge-m3	1024
+bge-m3/1024 (ollama)	q026	en	synonym	PF-T-4	PF-U-4	3	0	1	0.333	1.000	ollama:bge-m3	ollama:bge-m3	1024
+bge-m3/1024 (ollama)	q027	de	synonym	BL-SPA-1800	BL-SPA-1800	1	1	1	1.000	1.000	ollama:bge-m3	ollama:bge-m3	1024
+bge-m3/1024 (ollama)	q028	fr	synonym	BL-XPZ-1500	BL-XPZ-1500	1	1	1	1.000	1.000	ollama:bge-m3	ollama:bge-m3	1024
+bge-m3/1024 (ollama)	q029	de	synonym	FX-934-M8-A4	FX-934-M8-A4	1	1	1	1.000	1.000	ollama:bge-m3	ollama:bge-m3	1024
+bge-m3/1024 (ollama)	q030	en	synonym	FX-912-M6x25-A4	FX-912-M6x25-A4	1	1	1	1.000	1.000	ollama:bge-m3	ollama:bge-m3	1024
+bge-m3/1024 (ollama)	q031	de	constraint	EM-MS-2.5-4|VQ-MS-2.5-4	EM-MS-4-6.3	4	0	1	0.250	1.000	ollama:bge-m3	ollama:bge-m3	1024
+bge-m3/1024 (ollama)	q032	en	constraint	EM-MS-6-10|VQ-MS-6-10	EM-MS-13-18	4	0	1	0.250	0.500	ollama:bge-m3	ollama:bge-m3	1024
+bge-m3/1024 (ollama)	q033	fr	constraint	EM-MS-9-14|VQ-MS-9-14	FX-912-M12x50-A2	0	0	0	0.000	0.000	ollama:bge-m3	ollama:bge-m3	1024
+bge-m3/1024 (ollama)	q034	it	constraint	VQ-MS-17-23|VQ-MS-20-25|EM-MS-17-23|EM-MS-20-25	EM-MS-20-25	1	1	1	1.000	0.750	ollama:bge-m3	ollama:bge-m3	1024
+bge-m3/1024 (ollama)	q035	de	constraint	EM-C38-230AC|VQ-C32-230AC|VQ-C38-230AC|EM-C25-230AC|VQ-C25-230AC|EM-C32-230AC	VQ-C25-230AC	1	1	1	1.000	0.500	ollama:bge-m3	ollama:bge-m3	1024
+bge-m3/1024 (ollama)	q036	en	constraint	VQ-C18-24DC|VQ-C38-24DC|EM-C18-24DC|VQ-C25-24DC|EM-C38-24DC|EM-C25-24DC|VQ-C32-24DC|EM-C32-24DC	VQ-C18-24DC	1	1	1	1.000	0.500	ollama:bge-m3	ollama:bge-m3	1024
+bge-m3/1024 (ollama)	q037	it	constraint	EM-C9-24DC|VQ-C9-24DC	VQ-C9-24DC	1	1	1	1.000	1.000	ollama:bge-m3	ollama:bge-m3	1024
+bge-m3/1024 (ollama)	q038	de	constraint	SM-OR-20x2.5-FKM	SM-OR-20x2.5-FKM	1	1	1	1.000	1.000	ollama:bge-m3	ollama:bge-m3	1024
+bge-m3/1024 (ollama)	q039	en	constraint	SM-OR-30x3-EPDM	SM-OR-30x3-EPDM	1	1	1	1.000	1.000	ollama:bge-m3	ollama:bge-m3	1024
+bge-m3/1024 (ollama)	q040	fr	constraint	SM-OR-10x2-FKM|SM-OR-10x2-NBR	SM-OR-10x2-NBR	1	1	1	1.000	1.000	ollama:bge-m3	ollama:bge-m3	1024
+bge-m3/1024 (ollama)	q041	it	constraint	GX-M25-PA|GX-M20-MS|GX-M20-PA|GX-M25-MS	GX-M12-PA	3	0	1	0.333	1.000	ollama:bge-m3	ollama:bge-m3	1024
+bge-m3/1024 (ollama)	q042	de	constraint	GX-M32-MS|GX-M25-MS	GX-M16-MS	4	0	1	0.250	1.000	ollama:bge-m3	ollama:bge-m3	1024
+bge-m3/1024 (ollama)	q043	en	constraint	GX-M12-PA|GX-M16-MS|GX-M16-PA|GX-M12-MS	GX-M25-PA	2	0	1	0.500	1.000	ollama:bge-m3	ollama:bge-m3	1024
+bge-m3/1024 (ollama)	q044	fr	constraint	EM-C32-230AC|VQ-C32-230AC	VQ-C32-230AC	1	1	1	1.000	1.000	ollama:bge-m3	ollama:bge-m3	1024
+bge-m3/1024 (ollama)	q045	de	need	LB-H1-1000|LB-H1-400	LB-EP2-400	3	0	1	0.333	1.000	ollama:bge-m3	ollama:bge-m3	1024
+bge-m3/1024 (ollama)	q046	en	need	LB-EM-400	LB-EM-400	1	1	1	1.000	1.000	ollama:bge-m3	ollama:bge-m3	1024
+bge-m3/1024 (ollama)	q047	fr	need	LB-HT-400	LB-HT-400	1	1	1	1.000	1.000	ollama:bge-m3	ollama:bge-m3	1024
+bge-m3/1024 (ollama)	q048	it	need	LB-EP2-400	LB-EP2-400	1	1	1	1.000	1.000	ollama:bge-m3	ollama:bge-m3	1024
+bge-m3/1024 (ollama)	q049	de	need	SM-OR-15x2.5-FKM|SM-OR-15x2.5-NBR	SM-OR-15x2.5-EPDM	2	0	1	0.500	1.000	ollama:bge-m3	ollama:bge-m3	1024
+bge-m3/1024 (ollama)	q050	en	need	PF-U-8	PF-ST-8-G38	3	0	1	0.333	1.000	ollama:bge-m3	ollama:bge-m3	1024
+bge-m3/1024 (ollama)	q051	en	cross	FX-912-M4x16-A2	FX-912-M4x16-A2	1	1	1	1.000	1.000	ollama:bge-m3	ollama:bge-m3	1024
+bge-m3/1024 (ollama)	q052	de	cross	FX-912-M5x20-8.8	FX-912-M5x20-8.8	1	1	1	1.000	1.000	ollama:bge-m3	ollama:bge-m3	1024
+bge-m3/1024 (ollama)	q053	fr	cross	FX-912-M6x30-A4	FX-912-M6x30-8.8	2	0	1	0.500	1.000	ollama:bge-m3	ollama:bge-m3	1024
+bge-m3/1024 (ollama)	q054	it	cross	FX-912-M8x25-A2	FX-912-M8x25-A2	1	1	1	1.000	1.000	ollama:bge-m3	ollama:bge-m3	1024
+bge-m3/1024 (ollama)	q055	en	cross	FX-912-M8x35-8.8	FX-912-M8x35-8.8	1	1	1	1.000	1.000	ollama:bge-m3	ollama:bge-m3	1024
+bge-m3/1024 (ollama)	q056	de	cross	FX-912-M10x50-A4	FX-912-M10x50-A4	1	1	1	1.000	1.000	ollama:bge-m3	ollama:bge-m3	1024
+bge-m3/1024 (ollama)	q057	fr	cross	FX-912-M12x40-A2	FX-912-M12x40-A2	1	1	1	1.000	1.000	ollama:bge-m3	ollama:bge-m3	1024
+bge-m3/1024 (ollama)	q058	it	cross	FX-912-M6x40-8.8	FX-912-M6x40-8.8	1	1	1	1.000	1.000	ollama:bge-m3	ollama:bge-m3	1024
+bge-m3/1024 (ollama)	q059	de	cross	SM-OR-8x2-FKM	SM-OR-8x2-FKM	1	1	1	1.000	1.000	ollama:bge-m3	ollama:bge-m3	1024
+bge-m3/1024 (ollama)	q060	fr	cross	SM-OR-12x2-EPDM	SM-OR-12x2-EPDM	1	1	1	1.000	1.000	ollama:bge-m3	ollama:bge-m3	1024
+bge-m3/1024 (ollama)	q061	it	cross	SM-OR-25x3-NBR	SM-OR-25x3-NBR	1	1	1	1.000	1.000	ollama:bge-m3	ollama:bge-m3	1024
+bge-m3/1024 (ollama)	q062	en	cross	SM-OR-40x3.5-FKM	SM-OR-40x3.5-FKM	1	1	1	1.000	1.000	ollama:bge-m3	ollama:bge-m3	1024
+bge-m3/1024 (ollama)	q063	de	cross	SM-OR-50x3.5-EPDM	SM-OR-50x3.5-EPDM	1	1	1	1.000	1.000	ollama:bge-m3	ollama:bge-m3	1024
+bge-m3/1024 (ollama)	q064	fr	cross	SM-OR-5x1.5-NBR	SM-OR-5x1.5-NBR	1	1	1	1.000	1.000	ollama:bge-m3	ollama:bge-m3	1024
+bge-m3/1024 (ollama)	q065	fr	cross	RT-6001|KW-6001-ZZ|KW-6001-2RS|RT-6001-ZZ|KW-6001|RT-6001-2RS	KW-6001-2RS	1	1	1	1.000	1.000	ollama:bge-m3	ollama:bge-m3	1024
+bge-m3/1024 (ollama)	q066	it	cross	KW-6202-ZZ|KW-6202|RT-6202-2RS|RT-6202|RT-6202-ZZ|KW-6202-2RS	KW-6202-ZZ	1	1	1	1.000	1.000	ollama:bge-m3	ollama:bge-m3	1024
+bge-m3/1024 (ollama)	q067	en	cross	KW-6206-2RS|KW-6206-ZZ|KW-6206|RT-6206-2RS|RT-6206|RT-6206-ZZ	RT-6206-2RS	1	1	1	1.000	1.000	ollama:bge-m3	ollama:bge-m3	1024
+bge-m3/1024 (ollama)	q068	de	cross	KW-6303-2RS|KW-6303-ZZ|KW-6303|RT-6303|RT-6303-ZZ|RT-6303-2RS	KW-6303-2RS	1	1	1	1.000	1.000	ollama:bge-m3	ollama:bge-m3	1024

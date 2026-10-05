@@ -1,0 +1,11 @@
+<!--
+ The vector field for semantic search, added to the platform's Solr configset schema:
+ hybris/config/solr/instances/default/configsets/default/conf/schema.xml locally; on CCv2 the schema goes
+ through SAP's Solr customization in the repository (see the CCv2 docs on customizing Solr; not verified here).
+ Apply with scripts/apply-solr-schema.sh, before the first full index (or reload the core after).
+
+ 1024 = semanticsearch.voyage.dimensions. Localized properties of type knn1024 are named
+ <name>_<lang>_knn1024 (e.g. embedding_de_knn1024), which the dynamic field matches.
+-->
+<fieldType name="knn_vector_1024" class="solr.DenseVectorField" vectorDimension="1024" similarityFunction="cosine" />
+<dynamicField name="*_knn1024" type="knn_vector_1024" indexed="true" stored="false" />

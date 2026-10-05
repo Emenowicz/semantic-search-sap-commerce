@@ -1,0 +1,16 @@
+# Append to hybris/config/local.properties (never commit the real file once it holds an API key).
+# Every semanticsearch.* key and its default is in semanticsearch/project.properties.
+
+initialpassword.admin=nimda
+
+# Everything runs on a local Ollama server by default: ollama serve; ollama pull bge-m3; ollama pull qwen3:8b
+#semanticsearch.embedding.ollama.model=bge-m3
+#semanticsearch.answer.ollama.model=qwen3:8b
+
+# Hosted embeddings instead (Voyage AI, https://dashboard.voyageai.com); after a provider switch, run productEmbeddingCronJob, then a full index
+#semanticsearch.embedding.provider=voyage
+#semanticsearch.voyage.api.key=
+
+# Voyage free tier without a payment method (3 requests, 10K tokens a minute) only:
+#semanticsearch.voyage.document.batch.size=40
+#semanticsearch.voyage.document.min.interval.ms=21000

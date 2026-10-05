@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<items xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="items.xsd">
+
+	<itemtypes>
+		<!--
+		 One stored vector per product and language, filled by productEmbeddingJob and read by the indexer, so a full
+		 index makes no embedding calls. A separate type, not a Product attribute, so writing a vector changes neither
+		 the product's modifiedtime (delta index) nor anything catalog sync copies.
+		-->
+		<itemtype code="ProductEmbedding" autocreate="true" generate="true">
+			<deployment table="productembeddings" typecode="31201"/>
+			<attributes>
+				<attribute qualifier="product" type="Product">
+					<modifiers optional="false" unique="true"/>
+					<persistence type="property"/>
+				</attribute>
+				<attribute qualifier="language" type="Language">
+					<modifiers optional="false" unique="true"/>
+					<persistence type="property"/>
+				</attribute>
+				<attribute qualifier="sourceHash" type="java.lang.String">
+					<description>SHA-256 of the embedding model id and the embedded text; a mismatch means stale</description>
+					<persistence type="property"/>
+				</attribute>
+				<attribute qualifier="vector" type="java.lang.String">
+					<description>Base64 of the float32 vector (1024 dims: 5,464 characters)</description>
+					<persistence type="property">
+						<columntype>
+							<value>HYBRIS.LONG_STRING</value>
+						</columntype>
+					</persistence>
+				</attribute>
+			</attributes>
+			<indexes>
+				<index name="productLanguageIdx" unique="true">
+					<key attribute="product"/>
+					<key attribute="language"/>
+				</index>
+			</indexes>
+		</itemtype>
+	</itemtypes>
+
+</items>

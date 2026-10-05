@@ -1,0 +1,35 @@
+label	query	lang	kind	status	correct	cited	expected	seconds	reason	answer
+gemma3:12b	q01	en	synonym	ANSWERED	1	eval-p06|eval-p17	eval-p06|eval-p17	11.1		The Tornal JS-80 pendulum saw cuts curves in wood, plastic and metal, and the T-shank blades are suitable for wood.
+gemma3:12b	q02	en	synonym	ANSWERED	1	eval-p08	eval-p08	8.3		The Brixo AG-125 disc cutter is suitable for cutting and grinding metal and stone.
+gemma3:12b	q03	en	synonym	ANSWERED	0		eval-p09	7.2		I do not have a tape measure listed.
+gemma3:12b	q04	en	synonym	ANSWERED	1	eval-p13	eval-p13	8.7		To locate pipes and cables, I recommend the Nivelo wall scanner.
+gemma3:12b	q05	en	synonym	ANSWERED	1	eval-p28	eval-p28	8.7		I recommend the water-resistant wood glue for joinery and outdoor furniture.
+gemma3:12b	q06	en	synonym	ANSWERED	1	eval-p39	eval-p39	9.4		For draining a flooded basement, I would recommend the dirty water submersible pump with a float switch. It is designed to handle flooded areas and can deal with particles.
+gemma3:12b	q07	en	synonym	ANSWERED	1	eval-p22|eval-p13	eval-p22	10.5		To securely mount a shelf on a plasterboard wall, you can use the metal cavity fixings to spread behind the board. You may also want to use the wall scanner to locate studs before fixing.
+gemma3:12b	q08	en	constraint	ANSWERED	1	eval-p02|eval-p01	eval-p02	7.6		We have the Tornal ID-650 percussion drill, which is 650 W, and the Brixo HD-750 SDS-plus drill, which is 750 W.
+gemma3:12b	q09	de	cross	ANSWERED	1	eval-p01|eval-p02|eval-p14	eval-p01|eval-p02	9.0		Für das Bohren in Beton empfehle ich Ihnen die Brixo HD-750 oder die Tornal ID-650. Für die Bohrköpfe wäre das Brixo SDS-plus Betonbohrer-Set eine gute Ergänzung.
+gemma3:12b	q10	de	cross	ANSWERED	1	eval-p19	eval-p19	8.2		Wir haben Bit-Sets mit PH/PZ/TX, die sich für Akkuschrauber eignen.
+gemma3:12b	q11	de	cross	ANSWERED	1	eval-p29	eval-p29	10.1		Für die Wände im Wohnzimmer empfehle ich die Innendispersion.
+gemma3:12b	q12	de	cross	ANSWERED	1	eval-p30	eval-p30	9.9		Um Ihr Gartentor vor Rost zu schützen, empfehle ich Ihnen den Rostschutzgrund.
+gemma3:12b	q13	de	cross	ANSWERED	1	eval-p31|eval-p33	eval-p31	6.9		Ich empfehle Ihnen den Einhebel-Spültischmischer mit Ausziehbrause oder die Waschtischarmatur mit Ablaufgarnitur.
+gemma3:12b	q14	de	cross	ANSWERED	1	eval-p36	eval-p36	8.2		Für den Schutz von Licht- und Steckdosenkreisen empfehle ich den Leitungsschutzschalter.
+gemma3:12b	q15	de	constraint	ANSWERED	1	eval-p12	eval-p12	9.2		Wir haben eine Altura Alu-Stehleiter mit fünf Stufen im Angebot.
+gemma3:12b	q16	fr	cross	ANSWERED	1	eval-p06|eval-p17	eval-p06	10.7		Pour découper des courbes dans différents matériaux, je vous recommande la Tornal JS-80 scie sauteuse. Vous pouvez également utiliser les lames de scie sauteuse à queue en T pour bois si vous avez besoin de coupes courbes rapides.
+gemma3:12b	q17	fr	cross	ANSWERED	1	eval-p08	eval-p08	10.2		Pour une meuleuse d'angle, je vous recommande la Brixo AG-125. Elle coupe le métal et la pierre avec des disques de 125 mm et possède un blocage de broche et une protection contre le redémarrage.
+gemma3:12b	q18	fr	cross	ANSWERED	1	eval-p10	eval-p10	10.2		Pour effectuer des mesures horizontales, verticales et à 45°, je vous recommande le Nivelo niveau à bulle.
+gemma3:12b	q19	fr	cross	ANSWERED	1	eval-p21	eval-p21	10.6		Pour assembler le bois avec des panneaux d'aggloméré, je vous recommande les vis agglo.
+gemma3:12b	q20	fr	cross	ANSWERED	1	eval-p27	eval-p27	9.5		Pour une salle de bain, je vous recommande les Carreaux muraux en céramique blanc brillant.
+gemma3:12b	q21	fr	cross	ANSWERED	1	eval-p37	eval-p37	8.2		Je vous recommande le régulateur d'ambiance programmable hebdomadaire.
+gemma3:12b	q22	fr	cross	ANSWERED	1	eval-p38	eval-p38	9.4		Pour un bassin de jardin, je vous recommande la pompe immergée pour filtres, ruisseaux et jeux d'eau.
+gemma3:12b	q23	it	cross	ANSWERED	1	eval-p03	eval-p03	9.3		Per lavori da carpentiere, le consiglio il martello Hektor con testa in acciaio e manico antivibrazioni.
+gemma3:12b	q24	it	cross	ANSWERED	1	eval-p11	eval-p11	8.5		Per allentare bulloni e dadi, posso consigliarle la chiave inglese regolabile.
+gemma3:12b	q25	it	cross	ANSWERED	1	eval-p18	eval-p18	8.3		Per levigare il legno, può utilizzare la carta abrasiva.
+gemma3:12b	q26	it	cross	ANSWERED	1	eval-p25	eval-p25	9.6		Per una maniglia per porta in acciaio inox, le consiglio la coppia di maniglie su rosetta tonda in acciaio inox.
+gemma3:12b	q27	it	cross	ANSWERED	1	eval-p34	eval-p34	9.1		Per un'area esterna, le consiglio la prolunga per esterni.
+gemma3:12b	q28	it	cross	ANSWERED	1	eval-p26	eval-p26	9.8		Per l'isolamento termico di pareti, posso offrirle dei pannelli in polistirene estruso rigido.
+gemma3:12b	q29	de	mixed	ANSWERED	1	eval-p07|eval-p06	eval-p07	9.8		Für das Sägen von Metallrohren empfehle ich den Hektor Metallsägebogen oder die Tornal JS-80 Stichsäge.
+gemma3:12b	q30	en	mixed	ANSWERED	1	eval-p16|eval-p17	eval-p16	8.9		For cutting wood, you could use the Carbide blade or the T-shank blades.
+gemma3:12b	q31	fr	constraint	ANSWERED	1	eval-p38	eval-p38	9.6		Je vous recommande la pompe de bassin qui a un débit de 2500 litres par heure.
+gemma3:12b	n01	en	absent	ANSWERED	1			9.5		I'm sorry, we do not have a cordless lawn mower among the products available.
+gemma3:12b	n02	de	absent	ANSWERED	1			4.3		Es gibt kein passendes Produkt.
+gemma3:12b	n03	fr	absent	ANSWERED	1			8.8		Je suis désolé, aucun des produits disponibles ne correspond à votre demande.

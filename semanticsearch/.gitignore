@@ -1,0 +1,20 @@
+# written by the SAP Commerce build
+/build.xml
+/platformhome.properties
+/classes/
+/testclasses/
+/gensrc/
+/eclipsebin/
+/bin/
+/resources/semanticsearch/
+/resources/semanticsearch.build.number
+/.classpath
+/.project
+/.settings/
+/.externalToolBuilders/
+/.springBeans
+/extensioninfo.xsd
+/resources/items.xsd
+# filled from external-dependencies.xml by the build
+/lib/
+/libsources/

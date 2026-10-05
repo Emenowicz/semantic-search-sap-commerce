@@ -1,0 +1,69 @@
+id	lang	kind	query	expected	predicate
+q001	en	code	6204-2RS	KW-6204-2RS|RT-6204-2RS	bearing 6204, seal 2RS
+q002	de	code	6205 2RS	KW-6205-2RS|RT-6205-2RS	bearing 6205, seal 2RS
+q003	fr	code	6204 ZZ	KW-6204-ZZ|RT-6204-ZZ	bearing 6204, seal ZZ
+q004	it	code	6302	KW-6302|KW-6302-ZZ|KW-6302-2RS|RT-6302|RT-6302-ZZ|RT-6302-2RS	bearing 6302, any seal
+q005	en	code	DIN 912 M8x30 A2	FX-912-M8x30-A2	screw M8 x 30, A2
+q006	de	code	M10x40 A4 Zylinderschraube	FX-912-M10x40-A4	screw M10 x 40, A4
+q007	de	code	DIN 934 M12 verzinkt	FX-934-M12-8.8	nut M12, 8.8 zinc-plated
+q008	en	code	SPZ 1250	BL-SPZ-1250	belt SPZ 1250
+q009	it	code	XPZ 1000	BL-XPZ-1000	belt XPZ 1000
+q010	fr	code	OR 30x3 NBR	SM-OR-30x3-NBR	O-ring 30 x 3, NBR
+q011	de	code	G1/4 8 mm Steckverschraubung	PF-ST-8-G14|PF-EL-8-G14	fitting, 8 mm tube, G1/4
+q012	en	code	M20 cable gland brass	GX-M20-MS	gland M20, brass
+q013	de	synonym	Inbusschraube M6 x 20 Edelstahl	FX-912-M6x20-A2|FX-912-M6x20-A4	screw M6 x 20, stainless (A2 or A4)
+q014	fr	synonym	vis CHC M8 x 40 inox A4	FX-912-M8x40-A4	screw M8 x 40, A4
+q015	it	synonym	brugola M5 x 16	FX-912-M5x16-8.8|FX-912-M5x16-A2|FX-912-M5x16-A4	screw M5 x 16, any material
+q016	en	synonym	Allen bolt M12 x 50 zinc plated	FX-912-M12x50-8.8	screw M12 x 50, 8.8 zinc-plated
+q017	de	synonym	Imbusschrauben M4 x 10 rostfrei	FX-912-M4x10-A2|FX-912-M4x10-A4	screw M4 x 10, stainless (A2 or A4)
+q018	it	synonym	bullone a brugola M10 x 30 acciaio zincato	FX-912-M10x30-8.8	screw M10 x 30, 8.8 zinc-plated
+q019	de	synonym	Kugellager 20 mm Welle beidseitig abgedichtet	KW-6004-2RS|KW-6204-2RS|KW-6304-2RS|RT-6004-2RS|RT-6204-2RS|RT-6304-2RS	bearing, bore 20, seal 2RS
+q020	en	synonym	sealed bearing 25 mm bore	KW-6005-2RS|KW-6205-2RS|RT-6005-2RS|RT-6205-2RS	bearing, bore 25, seal 2RS
+q021	fr	synonym	roulement étanche 17x40	KW-6203-2RS|RT-6203-2RS	bearing 17 x 40, seal 2RS
+q022	it	synonym	cuscinetto schermato 6203	KW-6203-ZZ|RT-6203-ZZ	bearing 6203, seal ZZ
+q023	de	synonym	Druckluft Winkelstecker 6 mm	PF-EL-6-G18|PF-EL-6-G14	fitting elbow, 6 mm tube
+q024	fr	synonym	coude pneumatique 10 mm G3/8	PF-EL-10-G38	fitting elbow, 10 mm, G3/8
+q025	it	synonym	raccordo a T aria compressa 12 mm	PF-T-12	fitting tee, 12 mm
+q026	en	synonym	air hose tee 4 mm	PF-T-4	fitting tee, 4 mm
+q027	de	synonym	Keilriemen SPA 1800	BL-SPA-1800	belt SPA 1800
+q028	fr	synonym	courroie crantée XPZ 1500	BL-XPZ-1500	belt XPZ 1500
+q029	de	synonym	Mutter M8 rostfrei säurebeständig	FX-934-M8-A4	nut M8, A4
+q030	en	synonym	screw M6 x 25 for seawater	FX-912-M6x25-A4	screw M6 x 25, A4
+q031	de	constraint	Motorschutzschalter für 3 A Motorstrom	VQ-MS-2.5-4|EM-MS-2.5-4	MPCB range contains 3 A
+q032	en	constraint	motor protection breaker for a 7 A motor	VQ-MS-6-10|EM-MS-6-10	MPCB range contains 7 A
+q033	fr	constraint	disjoncteur moteur 12 A	VQ-MS-9-14|EM-MS-9-14	MPCB range contains 12 A
+q034	it	constraint	salvamotore per motore da 20 A	VQ-MS-17-23|VQ-MS-20-25|EM-MS-17-23|EM-MS-20-25	MPCB range contains 20 A
+q035	de	constraint	Schütz für 11 kW Motor, Spule 230 V	VQ-C25-230AC|VQ-C32-230AC|VQ-C38-230AC|EM-C25-230AC|EM-C32-230AC|EM-C38-230AC	contactor >= 11 kW, coil 230 V AC
+q036	en	constraint	contactor 24 V DC coil at least 7.5 kW	VQ-C18-24DC|VQ-C25-24DC|VQ-C32-24DC|VQ-C38-24DC|EM-C18-24DC|EM-C25-24DC|EM-C32-24DC|EM-C38-24DC	contactor >= 7.5 kW, coil 24 V DC
+q037	it	constraint	contattore da 4 kW bobina 24 V CC	VQ-C9-24DC|EM-C9-24DC	contactor 4 kW, coil 24 V DC
+q038	de	constraint	O-Ring für 180 °C Heißöl 20 x 2,5	SM-OR-20x2.5-FKM	O-ring 20 x 2.5, rated >= 180 °C
+q039	en	constraint	O-ring for hot water and steam 30 x 3	SM-OR-30x3-EPDM	O-ring 30 x 3, EPDM (water and steam)
+q040	fr	constraint	joint torique huile moteur 10 x 2	SM-OR-10x2-NBR|SM-OR-10x2-FKM	O-ring 10 x 2, oil-resistant (NBR or FKM)
+q041	it	constraint	pressacavo per cavo da 10 mm IP68	GX-M20-PA|GX-M20-MS|GX-M25-PA|GX-M25-MS	gland range contains 10 mm
+q042	de	constraint	Kabelverschraubung für 15 mm Kabel Messing	GX-M25-MS|GX-M32-MS	gland range contains 15 mm, brass
+q043	en	constraint	cable gland for 5 mm cable	GX-M12-PA|GX-M12-MS|GX-M16-PA|GX-M16-MS	gland range contains 5 mm
+q044	fr	constraint	contacteur 15 kW bobine 230 V	VQ-C32-230AC|EM-C32-230AC	contactor 15 kW, coil 230 V AC
+q045	de	need	lebensmittelechtes Fett für Bäckereimaschine	LB-H1-400|LB-H1-1000	grease NSF H1
+q046	en	need	grease for electric motor bearings	LB-EM-400	electric motor bearing grease
+q047	fr	need	graisse haute température 180 °C	LB-HT-400	high-temperature grease (to 200 °C)
+q048	it	need	grasso multiuso cartuccia 400 g	LB-EP2-400	grease EP2, 400 g
+q049	de	need	Dichtring für Hydrauliköl 15 x 2,5	SM-OR-15x2.5-NBR|SM-OR-15x2.5-FKM	O-ring 15 x 2.5, oil-resistant (NBR or FKM)
+q050	en	need	fitting to join two 8 mm air tubes	PF-U-8	fitting union, 8 mm
+q051	en	cross	socket head cap screw M4 x 16 A2	FX-912-M4x16-A2	screw M4 x 16, A2
+q052	de	cross	Zylinderschraube Innensechskant M5 x 20 verzinkt	FX-912-M5x20-8.8	screw M5 x 20, 8.8
+q053	fr	cross	vis tête cylindrique six pans creux M6 x 30 A4	FX-912-M6x30-A4	screw M6 x 30, A4
+q054	it	cross	vite testa cilindrica esagono incassato M8 x 25 A2	FX-912-M8x25-A2	screw M8 x 25, A2
+q055	en	cross	socket head cap screw M8 x 35 zinc plated	FX-912-M8x35-8.8	screw M8 x 35, 8.8
+q056	de	cross	Zylinderschraube Innensechskant M10 x 50 A4	FX-912-M10x50-A4	screw M10 x 50, A4
+q057	fr	cross	vis tête cylindrique six pans creux M12 x 40 A2	FX-912-M12x40-A2	screw M12 x 40, A2
+q058	it	cross	vite testa cilindrica esagono incassato M6 x 40 zincata	FX-912-M6x40-8.8	screw M6 x 40, 8.8
+q059	de	cross	O-Ring 8 x 2 FKM	SM-OR-8x2-FKM	O-ring 8 x 2, FKM
+q060	fr	cross	joint torique 12 x 2 EPDM	SM-OR-12x2-EPDM	O-ring 12 x 2, EPDM
+q061	it	cross	anello OR 25 x 3 NBR	SM-OR-25x3-NBR	O-ring 25 x 3, NBR
+q062	en	cross	O-ring 40 x 3.5 FKM	SM-OR-40x3.5-FKM	O-ring 40 x 3.5, FKM
+q063	de	cross	O-Ring 50 x 3,5 EPDM	SM-OR-50x3.5-EPDM	O-ring 50 x 3.5, EPDM
+q064	fr	cross	joint torique 5 x 1,5 NBR	SM-OR-5x1.5-NBR	O-ring 5 x 1.5, NBR
+q065	fr	cross	roulement à billes 12 x 28	KW-6001|KW-6001-ZZ|KW-6001-2RS|RT-6001|RT-6001-ZZ|RT-6001-2RS	bearing 12 x 28, any seal
+q066	it	cross	cuscinetto a sfere 15 x 35	KW-6202|KW-6202-ZZ|KW-6202-2RS|RT-6202|RT-6202-ZZ|RT-6202-2RS	bearing 15 x 35, any seal
+q067	en	cross	deep groove ball bearing 30 x 62	KW-6206|KW-6206-ZZ|KW-6206-2RS|RT-6206|RT-6206-ZZ|RT-6206-2RS	bearing 30 x 62, any seal
+q068	de	cross	Rillenkugellager 17 x 47	KW-6303|KW-6303-ZZ|KW-6303-2RS|RT-6303|RT-6303-ZZ|RT-6303-2RS	bearing 17 x 47, any seal

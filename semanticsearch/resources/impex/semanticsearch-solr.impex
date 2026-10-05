@@ -1,0 +1,39 @@
+# Product index for semantic search: the partsCatalog test catalog (data/parts-catalog.impex) in 4 languages,
+# with a localized 1024-dim vector field next to the usual code / name / description.
+# Import after data/parts-catalog.impex. Needs the knn1024 dynamic field in the Solr schema (scripts/apply-solr-schema.sh).
+
+INSERT_UPDATE Currency; isocode[unique = true]; active; base; conversion; digits; symbol
+; CHF ; true ; true ; 1 ; 2 ; CHF
+
+# SolrPropertiesTypes is a dynamic enum: a new value becomes the field suffix, e.g. embedding_de_knn1024
+INSERT_UPDATE SolrPropertiesTypes; code[unique = true]
+; knn1024
+
+INSERT_UPDATE SolrIndexConfig; name[unique = true]; batchSize; numberOfThreads; indexMode(code)
+; semanticsearchIndexConfig ; 100 ; 1 ; DIRECT
+
+INSERT_UPDATE SolrSearchConfig; description[unique = true]; pageSize
+; semanticsearchSearchConfig ; 20
+
+INSERT_UPDATE SolrIndexedType; identifier[unique = true]; type(code); variant
+; semanticsearchProductType ; Product ; false
+
+INSERT_UPDATE SolrFacetSearchConfig; name[unique = true]; description; indexNamePrefix; languages(isocode); currencies(isocode); solrServerConfig(name); solrSearchConfig(description); solrIndexConfig(name); solrIndexedTypes(identifier); catalogVersions(catalog(id), version)
+; semanticsearchIndex ; Semantic search spike ; semanticsearch ; en,de,fr,it ; CHF ; Default ; semanticsearchSearchConfig ; semanticsearchIndexConfig ; semanticsearchProductType ; partsCatalog:Staged
+
+INSERT_UPDATE SolrIndexedProperty; solrIndexedType(identifier)[unique = true]; name[unique = true]; type(code); localized[default = false]; fieldValueProvider
+; semanticsearchProductType ; code        ; string  ;      ; modelAttributesValueResolver
+; semanticsearchProductType ; name        ; text    ; true ; modelAttributesValueResolver
+; semanticsearchProductType ; description ; text    ; true ; modelAttributesValueResolver
+; semanticsearchProductType ; embedding   ; knn1024 ; true ; productEmbeddingValueResolver
+
+INSERT_UPDATE SolrIndexerQuery; solrIndexedType(identifier)[unique = true]; identifier[unique = true]; type(code); injectCurrentDate[default = true]; injectCurrentTime[default = true]; injectLastIndexTime[default = false]; query; user(uid)
+; semanticsearchProductType ; semanticsearchFullQuery ; full ; ; ; ; SELECT {pk} FROM {Product} ; admin
+
+# Embeds new and changed product texts into ProductEmbedding rows; the indexer only reads them.
+# Run it before a full index (in production: first entry of the nightly composite index job).
+INSERT_UPDATE ServicelayerJob; code[unique = true]; springId
+; productEmbeddingJob ; productEmbeddingJob
+
+INSERT_UPDATE CronJob; code[unique = true]; job(code); sessionUser(uid); sessionLanguage(isocode)
+; productEmbeddingCronJob ; productEmbeddingJob ; admin ; en

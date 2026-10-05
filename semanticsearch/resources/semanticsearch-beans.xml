@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- OCC writes JSON through JAXB (MOXy), not Jackson, so responses are generated beans: no-arg constructor + setters. -->
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="beans.xsd">
+
+	<bean class="io.github.emenowicz.semanticsearch.dto.SemanticSearchResultWsDTO">
+		<property name="query" type="String"/>
+		<property name="products" type="java.util.List&lt;io.github.emenowicz.semanticsearch.dto.SemanticSearchHitWsDTO>"/>
+	</bean>
+
+	<bean class="io.github.emenowicz.semanticsearch.dto.SemanticSearchHitWsDTO">
+		<property name="code" type="String"/>
+		<property name="name" type="String"/>
+		<property name="score" type="Double"/>
+	</bean>
+
+	<bean class="io.github.emenowicz.semanticsearch.dto.SemanticAnswerWsDTO">
+		<description>status ANSWERED: answer + citedCodes; FALLBACK: reason, no answer. products is always the search result.</description>
+		<property name="query" type="String"/>
+		<property name="status" type="String"/>
+		<property name="answer" type="String"/>
+		<property name="reason" type="String"/>
+		<property name="citedCodes" type="java.util.List&lt;String>"/>
+		<property name="products" type="java.util.List&lt;io.github.emenowicz.semanticsearch.dto.SemanticSearchHitWsDTO>"/>
+	</bean>
+
+</beans>
