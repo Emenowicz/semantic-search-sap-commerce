@@ -62,8 +62,8 @@ How each number was measured is in the [decision log](docs/decisions.md).
 | `config/` | Platform config to copy: `localextensions.xml`, `local.properties.example`, the Solr schema additions |
 | `scripts/` | `check-occ.sh` (smoke check against a running server), `apply-solr-schema.sh` |
 
-The Solr vector store is a separate library:
-[spring-ai-solr-store](https://github.com/Emenowicz/spring-ai-solr-store).
+The Solr vector store is a separate library on Maven Central:
+[spring-ai-solr-store](https://github.com/Emenowicz/spring-ai-solr-store) (`io.github.emenowicz:spring-ai-solr-store:0.1.0`).
 
 ## Quick start (local)
 
@@ -75,32 +75,30 @@ You need:
 
 These steps are distilled from the spike in the [decision log](docs/decisions.md). The whole sequence hasn't been re-run on a fresh install.
 
-1. **Install the vector store library** (it isn't published yet):
-   `cd spring-ai-solr-store && mvn install -DskipTests`.
-2. **Unzip the platform.** On macOS, also run `xattr -dr com.apple.quarantine <install dir>`, or the Tomcat
+1. **Unzip the platform.** On macOS, also run `xattr -dr com.apple.quarantine <install dir>`, or the Tomcat
    wrapper gets killed.
-3. **Create the config:** in `hybris/bin/platform`, run
+2. **Create the config:** in `hybris/bin/platform`, run
    `. ./setantenv.sh && ant createConfig -Dinput.template=develop`.
-4. **Set the extensions:** copy `config/localextensions.xml` to `hybris/config/` and point its second
+3. **Set the extensions:** copy `config/localextensions.xml` to `hybris/config/` and point its second
    `<path dir>` at this repository.
-5. **Set the properties:** append `config/local.properties.example` to `hybris/config/local.properties` and
+4. **Set the properties:** append `config/local.properties.example` to `hybris/config/local.properties` and
    uncomment what you change. The defaults need no key; for Voyage, set the provider and the key.
-6. **Build:** `ant clean all`.
-7. **Add the vector field** to the Solr schema before the first index:
+5. **Build:** `ant clean all`.
+6. **Add the vector field** to the Solr schema before the first index:
    `scripts/apply-solr-schema.sh hybris/config/solr/instances/default/configsets/default/conf/schema.xml`
    (it adds `config/solr/schema-additions.xml`, is idempotent, and keeps `schema.xml.orig`).
-8. **Initialize and start:** `ant initialize`, then `./hybrisserver.sh`.
-9. **Import the data:** in HAC (`https://localhost:9002`, admin/nimda), go to Console → ImpEx Import and
+7. **Initialize and start:** `ant initialize`, then `./hybrisserver.sh`.
+8. **Import the data:** in HAC (`https://localhost:9002`, admin/nimda), go to Console → ImpEx Import and
    import, in this order:
    1. `data/parts-catalog.impex`
    2. `semanticsearch/resources/impex/semanticsearch-solr.impex`
    3. `semanticsearch/resources/impex/semanticsearch-site.impex`
-10. **Embed, then index:** in HAC, go to Console → Scripting, choose Groovy, switch commit on and run the
+9. **Embed, then index:** in HAC, go to Console → Scripting, choose Groovy, switch commit on and run the
     embedding job:
     `cronJobService.performCronJob(cronJobService.getCronJob('productEmbeddingCronJob'), true)`
     Then, as a second run (the indexer only sees the vectors once the first run is committed):
     `indexerService.performFullIndex(facetSearchConfigService.getConfiguration('semanticsearchIndex'))`
-11. **Try it:** `scripts/check-occ.sh`. For answers, run `ollama serve` and `ollama pull qwen3:8b`, then:
+10. **Try it:** `scripts/check-occ.sh`. For answers, run `ollama serve` and `ollama pull qwen3:8b`, then:
     ```
     curl -k 'https://localhost:9002/occ/v2/semanticsearch/products/semantic-search/answer?query=angle%20grinder&lang=en'
     ```
@@ -111,7 +109,6 @@ These steps are distilled from the spike in the [decision log](docs/decisions.md
   texts). A real catalog with messy descriptions will differ.
 - **CCv2:** not deployed. Still missing: the Solr schema customization, secrets in Cloud Portal and outbound
   access to the embedding API.
-- **Library:** spring-ai-solr-store isn't published, so it has to be installed locally.
 - **Data processing:** with the default local models nothing leaves the server. With Voyage, catalog text and
   search queries go to Voyage AI (US), which needs a data processing agreement and a privacy review.
 - **Answer model:** local Ollama is for development. Production needs a hosted model.
